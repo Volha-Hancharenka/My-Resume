@@ -5,18 +5,16 @@
 @import "./config/reset";
 @import "./main";
 
-.body {
-  flex: 1 1 auto;
-  background-color: blue;
-}
 .page {
+  flex: 1 1 auto;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   max-width: 600px;
-  padding: 0 24px;
-  background-color: #5c6168;
+  
+  //padding: 24px 24px;
+  //
   &__aside {
     //flex: 1 1 auto;
     background-color: #e8eaee;
@@ -80,5 +78,8 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
   }
 }
