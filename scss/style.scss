@@ -3,7 +3,10 @@
 @import "./config/functions";
 @import "./config/mixins";
 @import "./config/reset";
-@import "./main";
+@import "./aside-header";
+@import "./aside-body";
+@import "./main-header";
+@import "./main-body";
 
 .page {
   flex: 1 1 auto;
@@ -12,74 +15,11 @@
   justify-content: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   max-width: 600px;
-  
-  //padding: 24px 24px;
-  //
   &__aside {
-    //flex: 1 1 auto;
     background-color: #e8eaee;
   }
 
   &__main {
-    //flex: 1 1 auto;
     background-color: #fff;
-  }
-}
-.aside {
-  &__container {
-    display: flex;
-    flex-direction: column;
-    margin: 40px 12px 40px 45px;
-  }
-
-  &__header {
-    display: flex;
-    flex-direction: column;
-    h1 {
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 24px;
-      letter-spacing: 0.1em;
-      color: #5c6168;
-    }
-  }
-
-  &__description {
-    margin-top: 12px;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-  }
-
-  &__icon {
-    width: 10px;
-  }
-
-  &__text {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 12px;
-    color: #5c6168;
-  }
-  &__text-decription {
-    text-transform: uppercase;
-  }
-  &__quadro {
-    width: 10px;
-    height: 6px;
-    display: flex;
-    background-color: red;
-  }
-  &__text-location {
-  }
-
-  &__location {
-    margin-top: 11px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    &:hover, &:focus {
-      text-decoration: underline;
-    }
   }
 }

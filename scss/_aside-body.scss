@@ -1,0 +1,91 @@
+.aside {
+  &__body {
+  }
+}
+.body-aside {
+  &__education {
+  }
+
+  &__title {
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 6px;
+  }
+
+  &__course,
+  &__university,
+  &__year {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+  &__course {
+    font-weight: 600;
+  }
+
+  &__text {
+   
+  }
+  &__text-first {
+    margin-bottom: 16px;
+  }
+  &__skills {
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__item {
+    align-items: center;
+    position: relative;
+    padding-left: 16px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #5c6168;
+    }
+    li {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 12px;
+    }
+  }
+}
+.text {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.title {
+  margin-top: 25px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.275em;
+
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 26px;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 26px;
+    height: 1px;
+    background-color: #5c6168;
+  }
+}

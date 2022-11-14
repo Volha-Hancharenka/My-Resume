@@ -1,0 +1,67 @@
+.main {
+  &__body {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__article {
+    margin-bottom: 16px;
+  }
+
+  &__position,
+  &__country,
+  &__year {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+  &__position {
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  &__year {
+    margin-bottom: 6px;
+  }
+
+  &__company {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 12px;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: #5c6168;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      display: block;
+    }
+  }
+}
+.title {
+}
+.text {
+}
