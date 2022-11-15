@@ -8,30 +8,6 @@
   &__text {
   }
 
-  &__article {
-    margin-bottom: 16px;
-  }
-
-  &__position,
-  &__country,
-  &__year {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 12px;
-  }
-  &__position {
-    font-weight: 600;
-    margin-bottom: 6px;
-  }
-  &__year {
-    margin-bottom: 6px;
-  }
-
-  &__company {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__list {
     margin-top: 8px;
     display: flex;
@@ -60,8 +36,44 @@
       display: block;
     }
   }
+  &__year {
+    margin-bottom: 6px;
+  }
+  &__article {
+    margin-bottom: 16px;
+  }
+}
+.position,
+.country,
+.year {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.article {
+  margin-top: 16px;
 }
 .title {
 }
 .text {
 }
+.company {
+  display: flex;
+  justify-content: space-between;
+}
+.position {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.next-aside__title {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  
+}
+.next-aside__list {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
